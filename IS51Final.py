@@ -31,13 +31,13 @@ calculate_percent_above_average(file)
   average = sum1 / length
   print("Number of grades:", length)
   print("Average grade:", average)
-  num = 0
-  for studentGrade in listGrades
-    if studentGrade > average
-      num += 1
-  percentHigher = num / length
+  counter = 0
+  for item in listGrades
+    if item > average
+      counter += 1
+  percentHigher = counter / length
   print("Percentage of grades above average:", end = " ")
-  print("{0:.2%}".format(percentHigher)
+  print("{0:.2%}".format(percentHigher))
 
 main
 """
