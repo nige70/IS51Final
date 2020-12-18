@@ -19,7 +19,7 @@ the average grade, and the percentage of grades that are above the average grade
 
 """
 main
-  file = open("Final.txt")
+  file = "Final.txt"
   calculate_percent_above_average(file)
 
 calculate_percent_above_average(file)
