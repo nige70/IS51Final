@@ -19,7 +19,7 @@ the average grade, and the percentage of grades that are above the average grade
 
 """
 main
-  file = open("Final.txt")
+  file = "Final.txt"
   calculate_percent_above_average(file)
 
 calculate_percent_above_average(file)
@@ -31,13 +31,36 @@ calculate_percent_above_average(file)
   average = sum1 / length
   print("Number of grades:", length)
   print("Average grade:", average)
-  num = 0
-  for studentGrade in listGrades
-    if studentGrade > average
-      num += 1
-  percentHigher = num / length
+  counter = 0
+  for item in listGrades
+    if item > average
+      counter += 1
+  percentHigher = counter / length
   print("Percentage of grades above average:", end = " ")
   print("{0:.2%}".format(percentHigher)
 
 main
 """
+
+def main():
+  file = "Final.txt"
+  calculate_percent_above_average(file)
+
+def calculate_percent_above_average(file):
+  infile = open(file, 'r')
+  listGrades = [int(line.rstrip()) for line in infile]
+  infile.close()
+  length = len(listGrades)
+  sum1 = sum(listGrades)
+  average = sum1 / length
+  print("Number of grades:", length)
+  print("Average grade:", average)
+  counter = 0
+  for item in listGrades:
+    if item > average:
+      counter += 1
+  percentHigher = counter / length
+  print("Percentage of grades above average:", end = " ")
+  print("{0:.2%}".format(percentHigher))
+
+main()
