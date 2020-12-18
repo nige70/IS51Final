@@ -16,3 +16,28 @@ to determine the average grade on the exam.
 After the program runs, the information that will be printed to the user include the number of grades,
 the average grade, and the percentage of grades that are above the average grade.
 """
+
+"""
+main
+  file = open("Final.txt")
+  calculate_percent_above_average(file)
+
+calculate_percent_above_average(file)
+  infile = open(file)
+  listGrades = convert lines to int for lines in infile
+  close infile
+  length = total numbers in listGrades
+  sum1 = sum of listGrades
+  average = sum1 / length
+  print("Number of grades:", length)
+  print("Average grade:", average)
+  num = 0
+  for studentGrade in listGrades
+    if studentGrade > average
+      num += 1
+  percentHigher = num / length
+  print("Percentage of grades above average:", end = " ")
+  print("{0:.2%}".format(percentHigher)
+
+main
+"""
