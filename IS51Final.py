@@ -37,7 +37,7 @@ calculate_percent_above_average(file)
       counter += 1
   percentHigher = counter / length
   print("Percentage of grades above average:", end = " ")
-  print("{0:.2%}".format(percentHigher)
+  print("{0:.2%}".format(percentHigher))
 
 main
 """
